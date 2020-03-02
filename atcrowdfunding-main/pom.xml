@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>atcrowdfunding-main</artifactId>
+  <packaging>war</packaging>
+  <name>atcrowdfunding-main</name>
+  <description>Web工程,存放所有页面以及静态资源,框架配置文件(war) 也是主工程</description>
+  
+  <!-- 设置父工程 -->
+  <parent>
+  	<groupId>com.atguigu.atcrowdfunding</groupId>
+  	<artifactId>atcrowdfunding-parent</artifactId>
+  	<version>0.0.1-SNAPSHOT</version>
+  	<relativePath>../atcrowdfunding-parent/pom.xml</relativePath>
+  </parent>
+  
+  
+  <dependencies>
+  
+  	<!--依赖atcrowdfunding-manager工程  -->	
+  	<dependency>
+  		<groupId>com.atguigu.atcrowdfunding</groupId>
+  		<artifactId>atcrowdfunding-manager</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	
+  	<!-- 依赖的WEB类库 -->
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<!-- 目标环境已经有了 -->
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+  </dependencies>
+</project>
