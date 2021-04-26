@@ -10,7 +10,7 @@
   <!--父工程统一管理依赖 设置依赖版本下面具体依赖再进行获取，方便管理-->
   <properties>
 		<!-- 公共依赖 -->
-		<commons-io.version>2.5</commons-io.version>
+		<commons-io.version>2.7</commons-io.version>
 		<commons-lang3.version>3.6</commons-lang3.version>
 		<commons-codec.version>1.10</commons-codec.version>
 		<commons-beanutils.version>1.9.3</commons-beanutils.version>
